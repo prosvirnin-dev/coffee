@@ -22,7 +22,7 @@ cd coffee
 uv tool install .
 ```
 
-Команда `coffee` появится в `~/.local/bin`. Убедитесь, что эта папка есть в `PATH` (у uv обычно уже настроено). Удаление — `uv tool uninstall coffee`.
+Команда `coffee` появится в `~/.local/bin`. Убедитесь, что эта папка есть в `PATH` (у uv обычно уже настроено). Обновление после изменений в коде — `uv tool install --reinstall .`, удаление — `uv tool uninstall coffee`.
 
 ## Запуск
 
@@ -44,12 +44,3 @@ coffee
 ## Логи
 
 Уровень задает переменная окружения `COFFEE_LOG_LEVEL` (по умолчанию `INFO`).
-
-## Разработка
-
-Заголовки коммитов проверяет хук по [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). Включить после `uv sync`:
-
-```bash
-uv run pre-commit install
-git config commit.template .gitmessage
-```
