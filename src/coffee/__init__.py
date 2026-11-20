@@ -11,7 +11,7 @@ from pynput import keyboard, mouse
 # Логи пишутся в терминал. Уровень задается переменной окружения COFFEE_LOG_LEVEL.
 logging.basicConfig(
     level=os.environ.get('COFFEE_LOG_LEVEL', 'INFO').upper(),
-    format='%(asctime)s [%(levelname)-7s] %(message)s',
+    format='%(asctime)s [%(levelname)s] %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
 )
 logger = logging.getLogger(__name__)
