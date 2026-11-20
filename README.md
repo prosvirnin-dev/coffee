@@ -1,6 +1,16 @@
-# Coffee
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/coffee.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/black_coffee.svg">
+    <img src="assets/black_coffee.svg" width="160" alt="Coffee">
+  </picture>
+</p>
 
-Небольшая утилита для macOS, которая имитирует активность пользователя и не дает системе уйти в режим сна из-за бездействия.
+<h1 align="center">Coffee</h1>
+
+<p align="center">
+  Небольшая утилита для macOS, которая имитирует активность пользователя и не дает системе уйти в режим сна из-за бездействия.
+</p>
 
 > **Только macOS.** Проект использует системные API macOS (CoreGraphics) и не предназначен для других платформ.
 
